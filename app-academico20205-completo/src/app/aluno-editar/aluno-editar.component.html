@@ -1,0 +1,43 @@
+<div class="container">
+    <mat-card-title>Alunos</mat-card-title>
+    <br>
+    <mat-card-subtitle><br>Editar</mat-card-subtitle>
+    <mat-divider></mat-divider>
+    <br>
+    <div class="input1">
+        <mat-form-field appearance="outline">
+            <mat-label>Id.</mat-label>
+            <input matInput id="idaluno" name="idaluno" disabled [(ngModel)]="aluno.idaluno">
+            <mat-icon matSuffix>edit</mat-icon>
+        </mat-form-field>
+    </div>
+    <div class="input2">
+        <mat-form-field appearance="outline">
+            <mat-label>Nome</mat-label>
+            <input matInput id="nome" name="nome" required [(ngModel)]="aluno.nome">
+            <mat-icon matSuffix>edit</mat-icon>
+        </mat-form-field>
+    </div>
+    <div class="input3">
+        <mat-form-field appearance="outline">
+            <mat-label>Sexo</mat-label>
+            <input matInput id="sexo" name="sexo" required [(ngModel)]="aluno.sexo">
+            <mat-icon matSuffix>person</mat-icon>
+        </mat-form-field>
+    </div>
+    <div class="input4">
+        <mat-form-field appearance="outline">
+            <mat-label>Data de Nascimento</mat-label>
+            <input matInput id="dt_nasc" name="dt_nasc" required [(ngModel)]="aluno.dt_nasc">
+            <mat-icon matSuffix>calendar_month</mat-icon>
+        </mat-form-field>
+    </div>
+    <div class="botoes-container">
+        <div class="btn" (click)="atualizar()">
+            Salvar <span class="material-icons">save</span>
+        </div>
+        <div class="btn" (click)="cancelar()">
+            Cancelar <span class="material-icons">cancel</span>
+        </div>
+    </div>
+</div> 
